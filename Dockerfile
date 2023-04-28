@@ -11,24 +11,32 @@ COPY dvl /home/pi/cerulean-dvl
 RUN cd /home/pi/cerulean-dvl && pip3 install .
 
 #Versioned Data
-LABEL version="1.0.2"
-LABEL permissions '\
+LABEL version="1.0.3"
+LABEL permissions='\
     {\
     "NetworkMode": "host"\
     }'
-LABEL authors '[\
+LABEL authors='[\
     {\
     "name": "Nick Nothom",\
     "email": "nick.nothom@ceruleansonar.com"\
     }\
     ]'
-LABEL docs ''
-LABEL website 'https://ceruleansonar.com'
-LABEL support 'https://forum.ceruleansonar.com/categories'
-LABEL company '{\
-    "about": "",\
-    "name": "Cerulean Sonar",\
-    "email": "dennys.bisogno@ceruleansonar.com"\
+LABEL company='{\
+        "about": "",\
+        "name": "Cerulean Sonar",\
+        "email": "dennys.bisogno@ceruleansonar.com"\
     }'
-LABEL readme 'https://raw.githubusercontent.com/CeruleanSonar/BlueOS-Cerulean-DVL/master/README.md'
+LABEL type="device-integration"
+LABEL tags='[\
+    "positioning",\
+    "navigation",\
+    "doppler-velocity-log"\
+]'
+LABEL readme='https://raw.githubusercontent.com/CeruleanSonar/BlueOS-Cerulean-DVL/master/README.md'
+LABEL links='{\
+        "website": "https://ceruleansonar.com",\
+        "support": "https://forum.ceruleansonar.com/categories"\
+    }'
+
 ENTRYPOINT /home/pi/cerulean-dvl/main.py
