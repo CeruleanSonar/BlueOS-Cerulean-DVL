@@ -1,0 +1,1 @@
+docker buildx build --platform linux/amd64,linux/arm/v7 . -t nicknothom/blueos-cerulean-dvl:latest -t nicknothom/blueos-cerulean-dvl:v1.0.6 --provenance=false --output type=registry

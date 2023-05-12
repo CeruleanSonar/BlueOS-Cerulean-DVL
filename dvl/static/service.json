@@ -3,7 +3,7 @@
     "description":"Driver for Cerulean DVL",
     "icon":"mdi-map-marker-path",
     "company":"Cerulean Sonar",
-    "version":"1.0.2",
+    "version":"1.0.6",
     "webpage":"https://github.com/ceruleansonar/BlueOS-Cerulean-DVL",
     "api":""
  }
